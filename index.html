@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+     <!-- navbar -->
+      <div class="nav">
+        <div class="nav1"><img src="./img/logo@2x.png" alt=""></div>
+        <div class="nav2">
+
+            <ul class="sidebar">
+                <li onclick="hidesidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#home" class="nav-link">home</a></li>
+                <li><a href="#menu" class="nav-link">menu</a></li>
+                <li><a href="#pages" class="nav-link">pages</a></li>
+                <li><a href="#news" class="nav-link">news</a></li>
+                <li><a href="#contacts" class="nav-link">contact</a></li>
+                <li><a href="menu.html" style="color: #EA462B;">Book a Table</a></li>
+            </ul>
+
+            <ul class="mainbar">
+                <li><a href="#home" class="hideonmobile">home</a></li>
+                <li><a href="#menu" class="hideonmobile">menu</a></li>
+                <li><a href="#pages" class="hideonmobile">pages</a></li>
+                <li><a href="#news" class="hideonmobile">news</a></li>
+                <li><a href="#contacts" class="hideonmobile">contact</a></li>
+                <li class="menu-button" onclick="showsidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+
+        </div>
+        <div class="nav3"><button><a href="menu.html">Book a Table</a></button>
+            <!-- <div class="burger">
+                <label class="hamburger">
+                  <input type="checkbox">
+                  <svg viewBox="0 0 32 32">
+                    <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                    <path class="line" d="M7 16 27 16"></path>
+                  </svg>
+                </label> -->
+        </div>
+    </div>
+    </div>
+
+    <!-- page1 -->
+     <section id="home">
+     <div class="page1">
+        <div class="text">
+            <h1>food for your soul</h1>
+            <p>it's about good food and fresh ingriedients.</p>
+            <button>view our menu</button>
+        </div>
+     </div>
+    </section>
+
+     <!-- page2 -->
+      <div class="page2">
+        <div class="text">
+            <h3>best dish of the day</h3>
+            <h2>Hamburger & Sweet Potato Fries</h2>
+            <h1><sup>$1</sup><span>9.99</span></h1>
+            <button>add to cart</button>
+        </div>
+      </div>
+
+      <!-- page3 -->
+       <section id="menu">
+       <div class="page3">
+        <h2>popular dishes</h2>
+        <p>Try the delicious new dishes from our chef.</p>
+        <div class="cube swiper">
+          <div class="card-wrapper">
+        <ol class="boxs swiper-wrapper">
+            <li class="box b1 swiper-slide">
+              <div class="tex">
+                <img src="./img/b1.jpg" alt="">
+                <h3>cheese royale burger</h3>
+                <p>grilled beef patty, turkey rashes, and burger relish.</p>
+                <h5>$19.00</h5>
+                <button>add to cart</button>
+              </div>
+            </li>
+            <li class="box b2 swiper-slide">
+              <div class="tex">
+                <img src="./img/b2.jpg" alt="">
+                <h3>classic havana burger</h3>
+                <p>grilled beef patty, turkey rashes, and burger relish.</p>
+                <h5>$25.00</h5>
+                <button>add to cart</button>
+              </div>
+            </li>
+            <li class="box b3 swiper-slide">
+              <div class="tex">
+                <img src="./img/b3.jpg" alt="">
+                <h3>buffalo mozzarella</h3>
+                <p>grilled beef patty, turkey rashes, and burger relish.</p>
+                <h5>$30.00</h5>
+                <button>add to cart</button>
+              </div>
+            </li>
+
+           <li class="box b1 swiper-slide">
+            <div class="tex">
+                <img src="./img/b4.jpg" alt="">
+                <h3>salmon veg curry</h3>
+                <p>grilled beef patty, turkey rashes, and burger relish.</p>
+                <h5>$19.00</h5>
+                <button>add to cart</button>
+              </div>
+            </li>
+
+          </ol>
+        <div class="swiper-slide-button swiper-button-prev"></div>
+        <div class="swiper-slide-button swiper-button-next"></div>
+
+      </div>
+         </div>
+       </div>
+
+       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+new Swiper('.card-wrapper', {
+  // Optional parameters
+  loop: true,
+
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView :1
+    },
+    768: {
+      slidesPerView :2
+    },
+    1024: {
+      slidesPerView :3
+    },
+  }
+});
+</script>
+
+      </section>
+
+  <!-- page 4 -->
+  <div class="hr"><hr></div>
+   <div class="page4">
+      <div class="icons">
+        <div class="ico i1">
+          <img src="./img/ic1.png" alt="">
+          <h3>fresh ingriedients</h3>
+          <p>sed egestas, ante vulipta eros pade vitae metus augue.</p>
+        </div>
+        <div class="ico i2">
+          <img src="./img/ic4.png" alt="">
+          <h3>best recipe</h3>
+          <p>sed egestas, ante vulipta eros pade vitae metus augue.</p>
+        </div>
+        <div class="ico i3">
+          <img src="./img/c2.png" alt="">
+          <h3>happy clients</h3>
+          <p>sed egestas, ante vulipta eros pade vitae metus augue.</p>
+        </div>
+        <div class="ico i4">
+          <img src="./img/c3.png" alt="">
+          <h3>vegan menu</h3>
+          <p>sed egestas, ante vulipta eros pade vitae metus augue.</p>
+        </div>
+        
+      </div>
+   </div>
+
+
+   <!-- page 5 -->
+    <div class="page5" style="background: url(./img/ban2.jpg);">
+
+      <div class="ban">
+        <h1>book a table</h1>
+        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque officia tenetur assumenda, non iusto cumque eveniet recusandae? Deleniti, nesciunt vel!
+        </h3>
+        <button>reservation</button>
+      </div>
+     </div>
+
+<!-- page 6 -->
+ <section id="pages">
+      <div class="page6">
+        <div class="pizza">
+          <div class="left">
+            <img src="./img/pizza.jpg" alt="">
+          </div>
+
+          <div class="right">
+            <div class="rig">
+              <h1>pizza</h1>
+              <hr>
+
+              <div class="piz z1">
+                <img src="./img/piz1.jpg" alt="">
+                <div class="pi">
+                  <h3>oakey smokey pizza </h3>
+                  <p>smoke mozzarella,basil and pincorpio romano.</p>
+                </div>
+                 <h4>$21.00</h4>
+              </div>
+              <div class="piz z2">
+                <img src="./img/piz2.jpg" alt="">
+                <div class="pi">
+                  <h3>White Ricotta Pizza </h3>
+                  <p>smoke mozzarella,basil and pincorpio romano.</p>
+                </div>
+                 <h4>$24.00</h4>
+              </div>
+              <div class="piz z3">
+                <img src="./img/piz3.jpg" alt="">
+                <div class="pi">
+                  <h3>Margherita Pizza</h3>
+                  <p>smoke mozzarella,basil and pincorpio romano.</p>
+                </div>
+                 <h4>$22.00</h4>
+              </div>
+              <div class="piz z4">
+                <img src="./img/piz4.jpg" alt="">
+                <div class="pi">
+                  <h3>Calzone</h3>
+                  <p>smoke mozzarella,basil and pincorpio romano.</p>
+                </div>
+                 <h4>$23.00</h4>
+              </div>
+              <div class="piz z5">
+                <img src="./img/piz5.jpg" alt="">
+                <div class="pi">
+                  <h3>Mercy Margarita</h3>
+                  <p>smoke mozzarella,basil and pincorpio romano.</p>
+                </div>
+                 <h4>$18.00</h4>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+<!-- page 7 -->
+      <div class="page7">
+        <div class="pasta">
+
+          <div class="right">
+            <div class="rig">
+              <h1>pasta</h1>
+              <hr>
+
+              <div class="piz z1">
+                <img src="./img/pas1.jpg" alt="">
+                <div class="pi">
+                  <h3>Spaghetti all’Amatriciana</h3>
+                  <p>smoke mozzarella,basil and pincorpio romano.</p>
+                </div>
+                 <h4>$21.00</h4>
+              </div>
+              <div class="piz z2">
+                <img src="./img/pas2.jpg" alt="">
+                <div class="pi">
+                  <h3>Spaghetti Carbonara</h3>
+                  <p>smoke mozzarella,basil and pincorpio romano.</p>
+                </div>
+                 <h4>$24.00</h4>
+              </div>
+              <div class="piz z3">
+                <img src="./img/pas3.jpg" alt="">
+                <div class="pi">
+                  <h3>Margherita Pizza</h3>
+                  <p>smoke mozzarella,basil and pincorpio romano.</p>
+                </div>
+                 <h4>$22.00</h4>
+              </div>
+
+            </div>
+          </div>
+          <div class="left">
+            <img src="./img/pasta.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+
+
+<!-- page 8 -->
+     <div class="page8">
+      <div class="pizza">
+        <div class="left">
+          <img src="./img/burger.jpg" alt="">
+        </div>
+
+        <div class="right">
+          <div class="rig">
+            <h1>burger</h1>
+            <hr>
+
+            <div class="piz z1">
+              <img src="./img/bur1.jpg" alt="">
+              <div class="pi">
+                <h3>Barrel Meat Feast</h3>
+                <p>smoke mozzarella,basil and pincorpio romano.</p>
+              </div>
+               <h4>$21.00</h4>
+            </div>
+            <div class="piz z2">
+              <img src="./img/bur2.jpg" alt="">
+              <div class="pi">
+                <h3>Classic Havana Burger</h3>
+                <p>smoke mozzarella,basil and pincorpio romano.</p>
+              </div>
+               <h4>$24.00</h4>
+            </div>
+            <div class="piz z3">
+              <img src="./img/bur3.jpg" alt="">
+              <div class="pi">
+                <h3>Single BBQ Burger</h3>
+                <p>smoke mozzarella,basil and pincorpio romano.</p>
+              </div>
+               <h4>$22.00</h4>
+            </div>
+            <div class="piz z4">
+              <img src="./img/bur4.jpg" alt="">
+              <div class="pi">
+                <h3>Havana Burger Combo</h3>
+                <p>smoke mozzarella,basil and pincorpio romano.</p>
+              </div>
+               <h4>$23.00</h4>
+            </div>
+            <div class="piz z5">
+              <img src="./img/bur1.jpg" alt="">
+              <div class="pi">
+                <h3>Mercy Margarita</h3>
+                <p>smoke mozzarella,basil and pincorpio romano.</p>
+              </div>
+               <h4>$18.00</h4>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!-- page 9 -->
+<div class="page9">
+     <div class="testimony">
+      <h2>Testimonials</h2>
+      <h6>they say about us</h6>
+      
+     <div class="container swiper">
+     <div class="card-wrapper">
+      <ol class="test swiper-wrapper">
+
+        <li class="tes t1 swiper-slide" id="tes1">
+          <div class="te">
+        <img src="./img/tes1.jpg" alt="">
+        <h3>jane avila</h3>
+        <h5>manager</h5>
+        <div class="hor"></div>
+        <p>"Donec nec justo eget feils fascilis fermentum. Aqualium portitor mauris sit amet orci.
+          Anean dignissim pellente squefeils"
+        </p>
+      </div>
+      </li>
+     
+      <li class="tes t2 swiper-slide" id="tes2">
+        <div class="te">
+        <img src="./img/tes2.jpg" alt="">
+        <h3>corben neylor</h3>
+        <h5>chef</h5>
+        <div class="hor"></div>
+        <p>"Donec nec justo eget feils fascilis fermentum. Aqualium portitor mauris sit amet orci.
+          Anean dignissim pellente squefeils"
+        </p>
+      </div>
+    </li>
+
+      <li class="tes t3 swiper-slide" id="tes3">
+        <div class="te">
+        <img src="./img/tes3.jpg" alt="">
+        <h3>rhiana fields</h3>
+        <h5>designer</h5>
+        <div class="hor"></div>
+        <p>"Donec nec justo eget feils fascilis fermentum. Aqualium portitor mauris sit amet orci.
+          Anean dignissim pellente squefeils"
+        </p>
+      </div>
+    </li>
+
+    <li class="tes t1 swiper-slide" id="tes1">
+      <div class="te">
+    <img src="./img/tes4.jpg" alt="">
+    <h3>jenifer</h3>
+    <h5>human resource</h5>
+    <div class="hor"></div>
+    <p>"Donec nec justo eget feils fascilis fermentum. Aqualium portitor mauris sit amet orci.
+      Anean dignissim pellente squefeils"
+    </p>
+  </div>
+  </li>
+
+  </ol>
+        <div class="swiper-slide-button swiper-button-prev"></div>
+        <div class="swiper-slide-button swiper-button-next"></div>
+     </div>
+    </div>
+     </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+new Swiper('.card-wrapper', {
+  // Optional parameters
+  loop: true,
+  spaceBetween :30,
+
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView :1
+    },
+    768: {
+      slidesPerView :2
+    },
+    1024: {
+      slidesPerView :3
+    },
+  }
+});
+</script>
+
+<!-- page 10 -->
+
+<div class="page10">
+<img src="./img/las1.jpg" alt="">
+<img src="./img//las2.jpg" alt="">
+<img src="./img//las3.jpg" alt="">
+<img src="./img//las4.jpg" alt="">
+</div>
+
+
+<!-- page 11 -->
+<section id="news"> 
+ <div class="page11">
+  <h2>latest news</h2>
+  <h6>Promotion in a cafe</h6>
+  <div class="news">
+    <div class="new">
+
+    <div class="ne n1">
+       <img src="./img/new1.jpg" alt="">
+       <div class="text">
+       <h6>Etiam sodales, erat non.</h6>
+       <p>Donec nec justo eget felis facilisis fermentum. 
+        Aliquam porttitor mauris sit amet orci. 
+        Aenean dignissim pellente squefelis.</p>
+        <div class="ho"></div>
+        <p1>24.04.2020 /<span>2 comments</span></p1>
+      </div>
+    </div>
+    <div class="ne n2">
+      <img src="./img/new2.jpg" alt="">
+       <div class="text">
+       <h6>Quisque volutpat mattis.</h6>
+       <p>Donec nec justo eget felis facilisis fermentum. 
+        Aliquam porttitor mauris sit amet orci. 
+        Aenean dignissim pellente squefelis.</p>
+        <div class="ho"></div>
+        <p1>24.04.2020 /<span>2 comments</span></p1>
+      </div>
+    </div>
+    <div class="ne n3">
+      <img src="./img/new3.jpg" alt="">
+       <div class="text">
+       <h6>Cras iaculis ultricies nulla.</h6>
+       <p>Donec nec justo eget felis facilisis fermentum. 
+        Aliquam porttitor mauris sit amet orci. 
+        Aenean dignissim pellente squefelis.</p>
+        <div class="ho"></div>
+        <p1>24.04.2020 /<span>2 comments</span></p1>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <button>view all news</button>
+ </div>
+</section>
+
+
+<!-- page 12 -->
+ <section id="contacts">
+ <div class="page12">
+  <div class="footer">
+    <div class="foot1">
+        <div class="fo1">
+          <img src="./img/logo@2x.png" alt="">
+          <p>Donec nec justo eget felis facilisis fermentum.Aenean dignissim pellente squefelis.</p>
+          <div class="io">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+        <div class="fo2">
+          <h3>Newsletter</h3>
+          <p>Morbi in sem quis dui placerat ornare. Pellentesque odionisi euismod in pharetra</p>
+          <div class="in"><input type="text" placeholder="enter your email"><button>subscribe</button></div>
+        </div>
+        <div class="fo3">
+          <h3>How To Find Us</h3>
+          <div class="a1">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Avenue Marina 34568 NY</p>
+          </div>
+          <div class="a2">
+            <i class="fa-solid fa-phone"></i>
+            <p>+0987 193-34-76</p>
+          </div>
+          <div class="a3">
+            <i class="fa-solid fa-envelope"></i>
+            <p>statumsupport@mail.com</p>
+          </div>
+        </div>
+    </div>
+    <div class="hi"></div>
+    <div class="foot2">
+     <p>Copyright © 2020 Koad Bistro. All rights reserved.</p>
+     <a href="#home">back to top</a>
+    </div>
+  </div>
+ </div>
+</section>
+
+
+<script src="./navjs.js"></script> 
+</body>
+</html>

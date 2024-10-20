@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- navbar -->
+     <section id="manu">
+    <div class="nav">
+        <div class="nav1"><img src="./img/logo@2x.png" alt=""></div>
+        <div class="nav2">
+
+            <ul class="sidebar">
+                <li onclick="hidesidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#form" class="nav-link">book a table</a></li>
+                <li><a href="#map" class="nav-link">Map</a></li>
+                <li><a href="#contacts" class="nav-link">contact</a></li>
+            </ul>
+
+            <ul class="mainbar">
+                <li><a href="#form" class="hideonmobile">book a table</a></li>
+                <li><a href="#map" class="hideonmobile">map</a></li>
+                <li><a href="#contacts" class="hideonmobile">contact</a></li>
+                <li class="menu-button" onclick="showsidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+
+        </div>
+    </div>
+    </div>
+  </section>
+
+    
+<!-- Reserve  -->
+<section id="reserve">
+    <div class="text">
+      <h1>Book a Table</h1>
+      <span>reservation</span>
+    </div>
+</section>
+  <section id="form">
+  <div class="list">
+    <div class="lis">
+      <a href="./index.html">Home</a> >
+      <a href="#form">Book a table</a>
+      <div class="line"></div>
+    </div>
+  </div>
+
+  <div class="form">
+    <div class="form-box">
+    <div class="form-title">
+      <h2>Book a Table</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedolorm reminusto
+        doeiusmod tempor condorico consectetur adipiscing elitut aliquip.</p>
+    </div>
+    <form>
+    <div class="cols-1">
+      <div class="cols">
+      <label for="text">Your name:</label>
+      <input type="text" placeholder="Enter Your Name">
+    </div>
+    <div class="cols">
+      <label for="text">Time:</label>
+      <input type="text" placeholder="12.00">
+    </div>
+    </div>
+    <div class="cols-1">
+      <div class="cols">
+      <label for="text">Date:</label>
+      <input type="text" placeholder="5/23">
+    </div>
+      <div class="cols">
+      <label for="text">Guest:</label>
+      <input type="text" placeholder="2">
+    </div>
+    </div>
+ 
+    
+      <div class="ta">
+      <label for="text">Message:</label>
+      <textarea cols="50" rows="5" placeholder="Your Message"></textarea>
+      </div>
+      <section id="map">
+    </form>
+    
+    <div class="res">
+      <button>Reservations</button>
+    </div>
+  </div>
+  </div>
+</section>
+  
+  <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71886.31510928158!2d-1.592630837488475!3d53.67575092209809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48795d6047fb0b31%3A0x71697d7cd4b2dac8!2sWakefield%2C%20UK!5e1!3m2!1sen!2sin!4v1729063306481!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  </section>
+
+
+  <!-- Footer -->
+ <section id="contacts">
+  <div class="menu">
+  <div class="page12">
+   <div class="footer">
+     <div class="foot1">
+         <div class="fo1">
+           <img src="./img//logo-light@2x.png" alt="">
+           <p>Donec nec justo eget felis facilisis fermentum.Aenean dignissim pellente squefelis.</p>
+           <div class="io">
+             <i class="fa-brands fa-facebook-f"></i>
+             <i class="fa-brands fa-twitter"></i>
+             <i class="fa-brands fa-instagram"></i>
+           </div>
+         </div>
+         <div class="fo2">
+           <h3>Newsletter</h3>
+           <p>Morbi in sem quis dui placerat ornare. Pellentesque odionisi euismod in pharetra</p>
+           <div class="in"><input type="text" placeholder="enter your email"><button>subscribe</button></div>
+         </div>
+         <div class="fo3">
+           <h3>How To Find Us</h3>
+           <div class="a1">
+             <i class="fa-solid fa-location-dot"></i>
+             <p>Avenue Marina 34568 NY</p>
+           </div>
+           <div class="a2">
+             <i class="fa-solid fa-phone"></i>
+             <p>+0987 193-34-76</p>
+           </div>
+           <div class="a3">
+             <i class="fa-solid fa-envelope"></i>
+             <p>statumsupport@mail.com</p>
+           </div>
+         </div>
+     </div>
+     <div class="hi"></div>
+     <div class="foot2">
+      <p>Copyright © 2020 Koad Bistro. All rights reserved.</p>
+      <a href="#manu">back to top</a>
+     </div>
+   </div>
+  </div>
+</div>
+ </section>
+
+
+ <script src="./navjs.js"></script> 
+</body>
+</html>
